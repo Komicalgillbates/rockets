@@ -18,11 +18,11 @@
                     Kshitij
                 </span>
             </a>
-            <div class="flex items-center gap-5 sm:gap-8">
+            <div class="flex items-center gap-6 sm:gap-8">
                 <a href="#about" class="text-sm font-medium text-slate-300 hover:text-white transition self-center">
                     About
                 </a>
-                <a href="team.html" class="text-sm font-medium text-amber-400 hover:text-white transition self-center">Team</a>
+                <a href="team.html" class="text-sm font-medium text-slate-300 hover:text-white transition self-center">Team</a>
                 <a href="Sponsors.html" class="text-sm font-medium text-slate-300 hover:text-white transition self-center">
                     Sponsors
                 </a>
@@ -41,85 +41,149 @@
     <main class="w-full bg-white text-slate-900 py-12 border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             
-            <div class="w-full h-[320px] sm:h-[400px] bg-slate-900 border border-slate-200 rounded-sm relative overflow-hidden shadow-xs flex items-center justify-center">
-                <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 opacity-40"></div>
-                <img src="team-group-photo.jpg" alt="Kshitij Rocketry Group Photo" class="absolute inset-0 w-full h-full object-cover opacity-90 hidden">
+            <!-- FLIGHT OPERATIONS GROUP PHOTO GRID CONTAINER -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white pt-4 pb-8">
                 
-                <div class="relative z-10 text-center px-4">
-                    <span class="text-xs font-mono uppercase tracking-[0.3em] text-slate-400 block mb-2">Kshitij Assembly</span>
-                    <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">Flight Operations Group Photo</h2>
+                <!-- LEFT SIDE: DESCRIPTION TEXT (Takes up 4 out of 12 columns) -->
+                <div class="text-left md:pr-4 order-2 md:order-1 md:col-span-4">
+                    <span class="text-xs font-mono uppercase tracking-[0.3em] text-slate-400 block mb-2">Kshitij Team</span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight uppercase">
+                        Team Photo
+                    </h2>
                 </div>
+
+                <!-- RIGHT SIDE: IMAGE FRAME CONTAINER (Wider: Takes up 8 out of 12 columns) -->
+                <div class="w-full h-auto bg-slate-950 border border-slate-200 relative overflow-hidden shadow-xs flex items-center justify-center order-1 md:order-2 md:col-span-8">
+                    <!-- Background decorative lineage layer -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 opacity-40 z-0"></div>
+                    
+                    <!-- Core Asset Img Frame (Fully visible via object-contain & custom max-height) -->
+                    <img src="photos/team.jpeg" alt="Kshitij Rocketry Group Photo" class="w-full h-auto max-h-[550px] object-contain relative z-10 block">
+                </div>
+
             </div>
 
 
 
-            <div class="pt-8 border-t border-slate-200">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    
-                    <div class="flex flex-col">
-                        <span class="text-[15px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 block">Project Director</span>
-                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group">
-                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-[15px] text-slate-400 opacity-60">Photo Frame</div>
-                            <img src="team/member1.jpg" alt="Team Lead" class="absolute inset-0 w-full h-full object-cover hidden">
+                <div class="pt-8 border-t border-slate-200">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        
+                        <div class="flex flex-col">
+                            <span class="text-[15px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 block">Faculty Advisor</span>
+                            <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group">
+                                <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-[15px] text-slate-400 opacity-60">Photo Frame</div>
+                                <img src="team/member1.jpg" alt="Team Lead" class="absolute inset-0 w-full h-full object-cover hidden">
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 mt-2 tracking-tight">Name</h4>
                         </div>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2 tracking-tight">Team Lead Name</h4>
-                    </div>
 
-                    <div class="flex flex-col">
-                        <span class="text-[15px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 block">Faculty Advisor</span>
-                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group">
-                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-[15px] text-slate-400 opacity-60">Photo Frame</div>
-                            <img src="team/member2.jpg" alt="Advisor" class="absolute inset-0 w-full h-full object-cover hidden">
-                        </div>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2 tracking-tight">Professor Name</h4>
                     </div>
-
                 </div>
-            </div>
 
 
 
+            <!-- CORE ENGINEERS GRID AREA - PERFECT TOP BASELINE ALIGNMENT -->
             <div class="pt-8 border-t border-slate-200">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- items-start locks the top of all columns to the exact same height -->
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 items-start">
                     
+                    <!-- MEMBER 1: M K PHANEESHA -->
                     <div class="flex flex-col">
-                        <span class="text-[12px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 block">Propulsion Specialist</span>
-                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group">
-                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-[13px] text-slate-400 opacity-60">Photo Frame</div>
+                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group rounded-xs shadow-xs">
+                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-xs text-slate-400 opacity-60">Photo Frame</div>
+                            <img src="team/member3.jpg" alt="M K Phaneesha" class="absolute inset-0 w-full h-full object-cover hidden">
                         </div>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2 tracking-tight">Engineer Name</h4>
+                        <h4 class="text-lg font-bold text-slate-900 mt-3 tracking-tight">M K Phaneesha</h4>
+                        <span class="text-[16px] font-mono uppercase tracking-wider text-indigo-800 leading-tight mt-1 block">
+                            Team Lead
+                        </span>
+                        <span class="text-[16px] font-mono uppercase tracking-wider text-indigo-800 leading-tight mt-1 block">
+                            Propulsion and Safety
+                        </span>
                     </div>
 
+                    <!-- MEMBER 2: VIHAN ASHRA -->
                     <div class="flex flex-col">
-                        <span class="text-[12px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 block">Avionics Lead</span>
-                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group">
-                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-[13px] text-slate-400 opacity-60">Photo Frame</div>
+                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group rounded-xs shadow-xs">
+                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-xs text-slate-400 opacity-60">Photo Frame</div>
+                            <img src="team/member4.jpg" alt="Vihan Ashra" class="absolute inset-0 w-full h-full object-cover hidden">
                         </div>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2 tracking-tight">Developer Name</h4>
+                        <h4 class="text-lg font-bold text-slate-900 mt-3 tracking-tight">Vihan Ashra</h4>
+                        <span class="text-[16px] font-mono uppercase tracking-wider text-indigo-800 leading-tight mt-1 block">
+                            Avionics
+                        </span>
                     </div>
 
+                    <!-- MEMBER 3: VIKRANT GUPTA -->
                     <div class="flex flex-col">
-                        <span class="text-[12px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 block">Aerodynamics Core</span>
-                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group">
-                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-[13px] text-slate-400 opacity-60">Photo Frame</div>
+                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group rounded-xs shadow-xs">
+                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-xs text-slate-400 opacity-60">Photo Frame</div>
+                            <img src="team/member5.jpg" alt="Vikrant Gupta" class="absolute inset-0 w-full h-full object-cover hidden">
                         </div>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2 tracking-tight">Designer Name</h4>
+                        <h4 class="text-lg font-bold text-slate-900 mt-3 tracking-tight">Vikrant Gupta</h4>
+                        <span class="text-[16px] font-mono uppercase tracking-wider text-indigo-800 leading-tight mt-1 block">
+                            Structural, Mechanical & Aerodynamics
+                        </span>
                     </div>
 
+                    <!-- MEMBER 5: DESIGNER Name -->
                     <div class="flex flex-col">
-                        <span class="text-[12px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 block">Aerodynamics Core</span>
-                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group">
-                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-[13px] text-slate-400 opacity-60">Photo Frame</div>
+                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group rounded-xs shadow-xs">
+                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-xs text-slate-400 opacity-60">Photo Frame</div>
+                            <img src="team/member7.jpg" alt="Aerodynamics Core" class="absolute inset-0 w-full h-full object-cover hidden">
                         </div>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2 tracking-tight">Designer Name</h4>
+                        <h4 class="text-lg font-bold text-slate-900 mt-3 tracking-tight">Shripad Pujari</h4>
+                        <span class="text-[16px] font-mono uppercase tracking-wider text-indigo-800 leading-tight mt-1 block">
+                            Flight Software and Data Systems
+                        </span>
                     </div>
 
+                    <!-- MEMBER 5: DESIGNER Name -->
                     <div class="flex flex-col">
-                        <span class="text-[12px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 block">Aerodynamics Core</span>
-                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group">
-                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-[13px] text-slate-400 opacity-60">Photo Frame</div>
+                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group rounded-xs shadow-xs">
+                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-xs text-slate-400 opacity-60">Photo Frame</div>
+                            <img src="photos/han.jpeg" alt="Aerodynamics Core" class="absolute inset-0 w-full h-full object-cover">
                         </div>
-                        <h4 class="text-sm font-bold text-slate-900 mt-2 tracking-tight">Designer Name</h4>
+                        <h4 class="text-lg font-bold text-slate-900 mt-3 tracking-tight">Han Joseph Anoop</h4>
+                        <span class="text-[16px] font-mono uppercase tracking-wider text-indigo-800 leading-tight mt-1 block">
+                            Telemetry and Ground Stations
+                        </span>
+                    </div>
+
+                    <!-- MEMBER 5: DESIGNER Name -->
+                    <div class="flex flex-col">
+                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group rounded-xs shadow-xs">
+                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-xs text-slate-400 opacity-60">Photo Frame</div>
+                            <img src="team/member7.jpg" alt="Aerodynamics Core" class="absolute inset-0 w-full h-full object-cover hidden">
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mt-3 tracking-tight">Pranav Venkatachalam</h4>
+                        <span class="text-[16px] font-mono uppercase tracking-wider text-indigo-800 leading-tight mt-1 block">
+                            Recovery System and Flight Dynamics
+                        </span>
+                    </div>
+
+                    <!-- MEMBER 5: DESIGNER Name -->
+                    <div class="flex flex-col">
+                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group rounded-xs shadow-xs">
+                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-xs text-slate-400 opacity-60">Photo Frame</div>
+                            <img src="photos/gopu.jpeg" alt="Aerodynamics Core" class="absolute inset-0 w-full h-full object-cover ">
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mt-3 tracking-tight">Gopalakrishna Kamath S</h4>
+                        <span class="text-[16px] font-mono uppercase tracking-wider text-indigo-800 leading-tight mt-1 block">
+                            Safety 
+                        </span>
+                    </div>
+
+                    <!-- MEMBER 5: DESIGNER Name -->
+                    <div class="flex flex-col">
+                        <div class="w-full aspect-square bg-slate-100 border border-slate-200 overflow-hidden relative group rounded-xs shadow-xs">
+                            <div class="absolute inset-0 bg-slate-800 flex items-center justify-center font-mono text-xs text-slate-400 opacity-60">Photo Frame</div>
+                            <img src="team/member7.jpg" alt="Aerodynamics Core" class="absolute inset-0 w-full h-full object-cover hidden">
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mt-3 tracking-tight">Hrishikesh A J</h4>
+                        <span class="text-[16px] font-mono uppercase tracking-wider text-indigo-800 leading-tight mt-1 block">
+                            Systems
+                        </span>
                     </div>
 
                 </div>
@@ -205,5 +269,6 @@
 
         </div>
     </footer>
+
 </body>
 </html>
