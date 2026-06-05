@@ -166,20 +166,25 @@
 
                     <!-- YOUR EXISTING TEAM CARD -->
                     <!-- TEAM CARD (NOW ALIGNED FLUSH TO THE TOP START OF THE COLUMN) -->
-                    <a href="team.html" class="w-full group relative block h-[287px] transition duration-300">
+                    <a href="team.html" class="block group relative w-full h-[300px] sm:h-[287px] bg-slate-950 border border-slate-900 overflow-hidden shadow-xs">
                         
-                        <!-- BACK DECORATIVE SHADOW BOX: Shifted away so it doesn't block the top edge -->
-                        <div class="absolute top-2 left-2 right-0 bottom-0 bg-[#a3e635] -z-10 transform group-hover:translate-x-1 group-hover:translate-y-1 transition duration-500"></div>
-                        
-                        <!-- FRONT MAIN TEXT BOX: Now snapped perfectly flush to top-0 left-0 -->
-                        <div class="absolute top-0 left-0 right-2 bottom-2 bg-[#84cc16] shadow-md flex items-center justify-center p-6 border border-lime-500/20">
-                            <div class="text-center">
-                                <h3 class="text-4xl font-black uppercase tracking-widest text-slate-950 font-sans group-hover:scale-105 transition duration-500">
-                                    Team
-                                </h3>
-                                <span class="inline-block mt-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-900/60 border-t border-slate-900/20 pt-1">
-                                    View Members →
-                                </span>
+                        <div class="absolute inset-0 z-0">
+                            <img src="Photos/team.jpeg" 
+                                alt="Kshitij Rocketry Team Background" 
+                                class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"></div>
+                        </div>
+
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between z-10 text-white">
+                            <div>
+                                <p class="text-[15px] font-mono tracking-[0.25em] uppercase text-slate-300">Operations</p>
+                                <h3 class="mt-4 text-3xl font-bold tracking-wide leading-tight font-sans uppercase">Our Team</h3>
+                            </div>
+                            
+                            <div class="flex justify-between items-center border-t border-white/20 pt-4 text-xs font-mono tracking-widest uppercase font-bold">
+                                <span>Open Team Page</span>
+                                <span class="text-lg group-hover:translate-x-1.5 transition duration-300">→</span>
                             </div>
                         </div>
 
