@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team | Kshitij Rocketry</title>
+    <title>Our Beginnings | Kshitij Rocketry</title>
+    <!-- Google Fonts: Inter (Body Text), Space Grotesk (Headings), JetBrains Mono (Technical Details) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Space Grotesk', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
 </head>
 <body class="bg-black text-slate-100 font-sans selection:bg-amber-500 selection:text-slate-900 antialiased">
 
     <nav class="w-full bg-black py-4 px-4 sm:px-6 lg:px-8 border-b border-slate-900">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
                 <div class="w-8 h-8 rounded-full border border-white/20 bg-slate-900 overflow-hidden flex items-center justify-center">
                     <img src="circle84-5.png" alt="IISER logo" class="w-full h-full object-cover">
@@ -18,8 +28,7 @@
                     Kshitij
                 </span>
             </a>
-                        <!-- NAV LINKS AREA (Wraps cleanly, scales seamlessly) -->
-            <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8">
+            <div class="flex items-center gap-6 sm:gap-8">
                 <a href="#about" class="text-sm font-medium text-slate-300 hover:text-white transition self-center">
                     About
                 </a>
@@ -30,9 +39,7 @@
                 <a href="Manufacturing_Partners.html" class="text-sm font-medium text-slate-300 hover:text-white transition self-center">
                     Manufacturing Partners
                 </a>
-                <a href="index.html#join" class="bg-amber-500 px-4 py-1.5 text-xs sm:text-sm font-semibold text-slate-900 hover:bg-amber-400 transition shadow-sm self-center">
-                    Join Group
-                </a>
+                <a href="index.html#join" class="bg-amber-500 px-5 py-2 text-sm font-semibold text-slate-900 hover:bg-amber-400 transition shadow-sm self-center">Join Group</a>
             </div>
         </div>
     </nav>
@@ -45,33 +52,71 @@
     </header>
 
 <main class="flex-grow bg-white w-full">
-        <div class="max-w-3xl mx-auto px-6 py-16 sm:py-24">
+        <div class="max-w-3xl mx-auto px-6 py-16 sm:py-24 space-y-20">
             
-            <!-- Metadata Tag & Main Heading Header -->
-            <header class="mb-12 border-b border-slate-200 pb-8">
-                <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-slate-950 uppercase leading-tight">
-                    Insert Partner <br>
-                </h1>
-            </header>
+            <!-- PARTNER 1 SECTION -->
+            <section class="border-b border-slate-200 pb-16">
+                <!-- Metadata Tag & Heading -->
+                <header class="mb-8">
+                    <span class="text-xs font-mono uppercase tracking-[0.3em] text-slate-400 block mb-2">Manufacturing Partner 01</span>
+                    <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-950 uppercase leading-tight">
+                        Renishaw India – Pune
+                    </h2>
+                    <!-- PASTE SNIPPET HERE -->
+                    <p class="mt-2 text-base sm:text-lg font-bold text-slate-900 font-sans max-w-2xl">
+                    Metal 3D Printing Partner
+                    </p>
+                </header>
 
-            <!-- Darker, Highly Readable Text Layout -->
-            <article class="space-y-6 text-slate-800 text-base sm:text-lg leading-relaxed font-sans">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                
-                <!-- Styled Quote Accent Box Adapted for Light Surface -->
-                <blockquote class="my-8 pl-4 border-l-4 border-orange-500 italic text-slate-900 font-semibold bg-slate-50 py-3 pr-4 shadow-xs">
-                    "The mathematical threshold of sound structural validation dictates absolute material symmetry during atmospheric ascension timelines."
-                </blockquote>
+                <!-- Clean Fit Image Container -->
+                <figure class="my-8 flex flex-col items-left gap-4">
+                    <div class="w-full max-w-xs overflow-hidden shadow-sm">
+                        <img src="photos/reinshaw.png" alt="Partner 1 Logo or Image" class="w-full h-auto block object-cover rounded-sm">
+                    </div>
+                    <figcaption class="mt-3 text-left text-sm font-semibold text-slate-800 font-mono tracking-wide">
+                        <span class="text-xs text-slate-500 font-normal">Precision Machining & Composites</span>
+                    </figcaption>
+                </figure>
 
-                <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-                </p>
-            </article>
+                <!-- Partner 1 Text -->
+                <article class="space-y-6 text-slate-800 text-base sm:text-lg leading-relaxed [font-family:'Roboto',sans-serif]">
+                    <p>
+                        Metal 3D Printing Partner, supporting Team Kshitij in the development and fabrication of high-performance metal components for our rocketry systems using advanced additive manufacturing technologies.
+                    </p>
+                </article>
+            </section>
+
+            <!-- PARTNER 2 SECTION -->
+            <section>
+                <!-- Metadata Tag & Heading -->
+                <header class="mb-8">
+                    <span class="text-xs font-mono uppercase tracking-[0.3em] text-slate-400 block mb-2">Manufacturing Partner 02</span>
+                    <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-950 uppercase leading-tight">
+                        Thrust Tech India
+                    </h2>
+                    <!-- PASTE SNIPPET HERE -->
+                    <p class="mt-2 text-base sm:text-lg font-bold text-slate-900 font-sans max-w-2xl">
+                    Critical rocket hardware, avionics, and engineering components
+                    </p>
+                </header>
+
+                <!-- Clean Fit Image Container -->
+                <figure class="my-8 flex flex-col items-left gap-4">
+                    <div class="w-full max-w-xs overflow-hidden shadow-sm">
+                        <img src="photos/thrusttechindia.jpeg"alt="Partner 2 Logo or Image" class="w-full h-auto block object-cover rounded-sm">
+                    </div>
+                    <figcaption class="mt-3 text-left text-sm font-semibold text-slate-800 font-mono tracking-wide">
+                        <span class="text-xs text-slate-500 font-normal">Avionics & Hardware Partner</span>
+                    </figcaption>
+                </figure>
+
+                <!-- Partner 2 Text -->
+                <article class="space-y-6 text-slate-800 text-base sm:text-lg leading-relaxed [font-family:'Roboto',sans-serif]">
+                    <p>
+                        Thrust Tech India is our manufacturing partner, supporting Team Kshitij with critical rocket hardware, avionics, and related engineering components for the development and testing of our student-built rocket.
+                    </p>
+                </article>
+            </section>
 
         </div>
     </main>
